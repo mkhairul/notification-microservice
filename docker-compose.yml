@@ -7,7 +7,9 @@ services:
       dockerfile: ./Dockerfile
     command: npm run start
     ports:
-      - '9527:3000'
+      - '3000:3000'
+    environment:
+      DB_HOST: mongodb
     networks:
       - nestjs-network
     depends_on:
@@ -22,7 +24,7 @@ services:
     volumes: 
       - /database:/data/db
     ports:
-      - '27017:27017'
+      - '27018'
     networks:
       - nestjs-network
     restart: always
