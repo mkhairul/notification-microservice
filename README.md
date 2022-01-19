@@ -14,12 +14,12 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Notification microservice
 
 ## Installation
 
 ```bash
-$ npm install
+$ yarn
 ```
 
 ## Running the app
@@ -31,6 +31,13 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 ```
+** Change the URI for mongodb in main.ts if running from local, docker should be fine **
+
+## Running the app with docker
+```bash
+$ docker-compose up dev
+```
+** Might need to change mongodb ports in docker-compose.yml **
 
 ## Test
 
